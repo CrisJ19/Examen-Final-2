@@ -1,7 +1,7 @@
 Sistema de Gestión de Ejemplo
 Integrantes del proyecto
 
-Estudiante 1: Desarrollador Unico
+Estudiante 1: Desarrollador Unico Chrishian Jhosoa Angarita Diaz 192414
 Descripción del problema
 Las barberías con bares integrados necesitan gestionar reservas de servicios de barbería (9:00 AM - 7:00 PM) y consumos inmediatos de bar (4:00 PM - 3:00 AM) para clientes en el local, permitiendo registrar múltiples unidades de bebidas/productos, con control de inventario y precio.
 
