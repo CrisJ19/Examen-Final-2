@@ -1,4 +1,4 @@
-Sistema de Gestión de Ejemplo
+Sistema de Gestión de Barberia y Bar CJ
 Integrantes del proyecto
 
 Estudiante 1: Desarrollador Unico Chrishian Jhosoa Angarita Diaz 192414
