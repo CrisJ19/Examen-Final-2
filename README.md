@@ -4,6 +4,7 @@ Integrantes del proyecto
 Estudiante 1: Desarrollador Unico
 Descripción del problema
 Las barberías con bares integrados necesitan gestionar reservas de servicios de barbería (9:00 AM - 7:00 PM) y consumos inmediatos de bar (4:00 PM - 3:00 AM) para clientes en el local, permitiendo registrar múltiples unidades de bebidas/productos, con control de inventario y precio.
+
 Solución propuesta
 Una aplicación Java que permite:
 
@@ -27,6 +28,12 @@ registrarConsumoBar: Registra consumos inmediatos con cantidades.
 mostrarReservas: Muestra reservas y consumos con cantidades.
 calcularCostoTotal: Calcula el costo total en COP.
 
+Estructura del proyecto: 5 clases (Persona, Cliente, Barbero, Inventario, Reserva), con herencia, encapsulamiento y Main para la lógica principal.
+Lógica de programación: Uso de if, switch, bucles (while, for), arreglos (reservas, bebidas, cantidades, precios), y métodos reutilizables (registrarServicioBarberia, registrarConsumoBar, mostrarReservas, calcularCostoTotal).
+Manejo de excepciones: Validaciones para entradas vacías, numéricas, horarios, inventario y cantidades.
+Tema del proyecto: Sistema de barbería con bar integrado, con horarios específicos (barbería 9:00 AM - 7:00 PM, bar 4:00 PM - 3:00 AM), reservas para barbería y consumos inmediatos con cantidades para el bar.
+Documentación: README.md completo con todos los requisitos.
+Diagrama UML: Actualizado y consistente con la estructura final.
 
 
 Instrucciones para ejecutar el programa
@@ -49,4 +56,3 @@ Usa la opción 3 para ver reservas y consumos (ej. "6 Águila").
 Usa la opción 4 para calcular el costo total en COP.
 Usa la opción 5 para ver el inventario.
 Selecciona la opción 6 para salir.
-
