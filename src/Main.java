@@ -8,8 +8,8 @@ public class Main {
         int numReservas = 0;
 
         while (true) {
-            System.out.println("\n--- Sistema de Gestión de Ejemplo ---");
-            System.out.println("1. Registrar servicio de barbería (9:00 AM - 7:00 PM)");
+            System.out.println("\n--- Sistema de Gestión de Barberia de CJ ---");
+            System.out.println("1. Registrar servicio de barberia (9:00 AM - 7:00 PM)");
             System.out.println("2. Registrar consumo de bar (inmediato)");
             System.out.println("3. Mostrar todas las reservas");
             System.out.println("4. Calcular costo total");
@@ -58,8 +58,6 @@ public class Main {
             }
         }
     }
-
-    // Método para registrar servicio de barbería
     public static int registrarServicioBarberia(Reserva[] reservas, int numReservas, Scanner scanner) {
         try {
             System.out.print("Nombre del cliente: ");
@@ -74,8 +72,6 @@ public class Main {
             if (cedula.isEmpty()) {
                 throw new IllegalArgumentException("La cédula no puede estar vacía.");
             }
-
-            // Solicitar fecha
             System.out.print("Mes de la reserva (1-12): ");
             int mes = Integer.parseInt(scanner.nextLine());
             if (mes < 1 || mes > 12) {
@@ -96,8 +92,6 @@ public class Main {
             if (!amPm.equals("AM") && !amPm.equals("PM")) {
                 throw new IllegalArgumentException("Ingrese AM o PM.");
             }
-
-            // Validar horario de barbería (9:00 AM - 7:00 PM)
             if (amPm.equals("AM") && hora < 9) {
                 throw new IllegalArgumentException("La barbería abre a las 9:00 AM.");
             }
@@ -150,8 +144,6 @@ public class Main {
         }
         return numReservas;
     }
-
-    // Método para registrar consumo de bar (con cantidades)
     public static int registrarConsumoBar(Reserva[] reservas, int numReservas, Scanner scanner, Inventario inventario) {
         try {
             System.out.print("Nombre del cliente: ");
@@ -202,8 +194,6 @@ public class Main {
         }
         return numReservas;
     }
-
-    // Método reutilizable para mostrar reservas
     public static void mostrarReservas(Reserva[] reservas, int numReservas) {
         if (numReservas == 0) {
             System.out.println("No hay reservas registradas.");
@@ -222,8 +212,6 @@ public class Main {
             }
         }
     }
-
-    // Método reutilizable para calcular costo total
     public static double calcularCostoTotal(Reserva[] reservas, int numReservas) {
         double total = 0;
         for (int i = 0; i < numReservas; i++) {

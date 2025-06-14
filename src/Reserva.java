@@ -7,8 +7,6 @@ public class Reserva {
     private int dia;
     private int hora;
     private String amPm;
-
-    // Constructor
     public Reserva(Cliente cliente, Barbero barbero, String servicio, double costo, int mes, int dia, int hora, String amPm) {
         this.cliente = cliente;
         this.barbero = barbero;
@@ -19,8 +17,6 @@ public class Reserva {
         this.hora = hora;
         this.amPm = amPm;
     }
-
-    // Getters y Setters
     public Cliente getCliente() {
         return cliente;
     }
