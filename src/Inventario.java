@@ -23,6 +23,7 @@ public class Inventario {
             }
         }
         return false;
+
     }
     public void reducirInventario(String bebida, int cantidad) {
         for (int i = 0; i < bebidas.length; i++) {
